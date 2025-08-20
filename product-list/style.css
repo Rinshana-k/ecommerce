@@ -1,0 +1,41 @@
+body{
+    height: 100vh;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(227,106,148,1) 0%, rgba(245,255,170,1) 100.3% );
+
+}
+:root{
+      --bg-purple:#600099;
+
+}
+.card{
+    position: relative;
+}
+.heart{
+    position:absolute;
+    top:25px;
+    right:25px;
+   
+}
+.btn{
+    background-color: var(--bg-purple);
+}
+.btn:hover{
+    background-color: var(--bg-purple);
+    color: white;
+
+}
+.card{
+    transition:transform .6s ease-in-out;
+}
+.card:hover{
+    transform: translateY(-6px);
+}
+
+
+.nav-item>a:hover{
+    
+    transform: translateY(-6px);
+}
+.nav-item>a{
+    transition: transform .6s ease;
+}

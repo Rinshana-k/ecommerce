@@ -1,0 +1,31 @@
+
+:root{
+
+    --bg-purple:#600099;
+}
+
+body{
+    height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(227,106,148,1) 0%, rgba(245,255,170,1) 100.3% );
+}
+.btn-1{
+    background-color: var(--bg-purple);
+
+}
+.btn-1:hover{
+        background-color: var(--bg-purple);
+        color: white;
+}
+.btn-outline-1{
+        border:1px solid var(--bg-purple);
+        color: var(--bg-purple);
+
+}
+.btn-outline-1:hover{
+    background-color: var(--bg-purple);
+    color: white;
+    
+}
+.link{
+    color: var(--bg-purple);
+}

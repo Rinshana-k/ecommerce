@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(227,106,148,1) 0%, rgba(245,255,170,1) 100.3% );
+
+}
+:root{
+  --bg-purple:#600099;
+}
+ .btn1{
+    background-color: var(--bg-purple);
+
+}
+.link{
+    color: var(--bg-purple);
+}
+.btn1:hover{
+    background-color: var(--bg-purple);
+    color: white;
+    
+}
+.icon{
+    color: var(--bg-purple);
+}

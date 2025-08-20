@@ -1,0 +1,11 @@
+body {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(227, 106, 148, 1) 0%, rgba(245, 255, 170, 1) 100.3%);
+
+}
+:root {
+    --txt-color: #E0E0E0;
+}
+
+.clr {
+    color: var(--txt-color);
+}

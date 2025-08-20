@@ -1,0 +1,24 @@
+
+body {
+    height: 100vh;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(227, 106, 148, 1) 0%, rgba(245, 255, 170, 1) 100.3%);
+
+}
+:root {
+    --txt-color:#9E9E9E;
+    --bg-purple: #600099;
+}
+
+.clr{
+    color: var(--txt-color);
+}
+.clr1{
+    color: var(--bg-purple);
+}
+.bg-purple{
+    background-color: var(--bg-purple);
+}
+.bg-purple:hover{
+    color: white;
+    background-color: var(--bg-purple);
+}

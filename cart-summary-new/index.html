@@ -4,92 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart-summary</title>
-    <!-- bs cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- custom css  -->
-    <link rel="stylesheet" href="./style.css">
+    <title>cart summary</title>
 </head>
+<!-- bs cdn -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<!-- js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+<!-- font-awewsome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- custom css -->
+<link rel="stylesheet" href="./style.css">
 
-<body class="d-flex justify-content-center align-items-center">
-    <div class="cart-container bg-dark">
-        <!-- left side product table -->
-        <div class="cart-table border border-bottom rounded " style="width: 55%;">
-            <table class="border bg-primary w-100">
-                <!-- table row 1 start -->
-                <tr class="bg-danger border-bottom border-dark">
-                    <th class="p-3">Product</th>
-                    <th class="p-3">Quantity</th>
-                    <th class="p-3">Price</th>
-                    <th class="p-3"></th>
-                </tr>
-                <!-- table row 1 end -->
-                <!-- table row 2 start -->
-                <tr class=" border-dark border-bottom">
-                    <td class="p-3 text-start d-flex">
-                        <img style="width: 90px;" src="./images/arrul-lin-sYhUhse5uT8-unsplash.jpg" alt="unavailable">
-                        <div class="ms-5 d-flex justify-content-center align-items-center">
-                            <p><strong>Tshirt</strong><br> Size:L Grey</p>
-                        </div>
-                    </td>
-                    <td class="quantity p-3 text-start">
-                        <input type="number" value="1" min="1" style="width: 70px;" class="text-center p-2">
-                    </td>
+<body class="vh-100">
+    <!-- nav section start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <h4 class="navbar-brand fw-bold txt-color">Falura</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <form class="d-flex mx-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-1 rounded" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"> <i
+                                class="fa-solid fa-user txt-color"></i>Sign in / Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-gift txt-color"></i>My orders</a>
+                    </li>
 
-                    <td class="p-3 text-start">
-                        <p>$350<br> <del>$500</del></p>
-                    </td>
-                    <td class="p-3">
-                        <button class="btn btn-danger p-2" type="button">Remove</button>
-                    </td>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><i class="fa-solid fa-cart-shopping txt-color"></i>Cart</a>
+                    </li>
+                </ul>
 
-                </tr>
-
-                <!-- table row 2 end -->
-                <!-- table row 3 start -->
-                <tr>
-                    <td class="p-3 text-start d-flex">
-                        <img style="width: 90px;" src="./images/debby-ledet-2ZXVU3BJzN4-unsplash.jpg" alt="unavailable">
-                        <div class="ms-5 d-flex justify-content-center align-items-center">
-                            <p><strong>Gown</strong><br> Size:M printed</p>
-                        </div>
-                    </td>
-                    <td class="quantity p-3 text-start">
-                        <input type="number" value="1" min="1" style="width: 70px;" class="text-center p-2">
-                    </td>
-
-                    <td class="p-3 text-start">
-                        <p>$450<br> <del>$900</del></p>
-                    </td>
-                    <td class="p-3 ">
-                        <button class="btn btn-danger p-2" type="button">Remove</button>
-                    </td>
-                </tr>
-                <!-- table row 3 end -->
-            </table>
-        </div>
-        <!-- left side product end -->
-        <!-- Right Side - Summary -->
-        <div class="cart-summary">
-            <div class="coupon-box">
-                <input type="text" placeholder="Coupon code">
-                <button>Apply</button>
             </div>
-
-            <div class="summary-details">
-                <p>Total Price: <span>$69.97</span></p>
-                <p class="discount">Discount: <span>- $10.00</span></p>
-                <p><strong>Total: <span>$59.97</span></strong></p>
-            </div>
-
-            <button class="btn purchase-btn">Make Purchase</button>
-            <button class="btn shop-btn">Continue Shopping</button>
         </div>
+    </nav>
+    <!-- nav section end -->
+    <div class="container-fluid mt-4 ms-3">
+        <h2 class="mb-4">Shopping Cart</h2>
+
+        <div class="row">
+            <!-- cart item1 -->
+            <div class="col-8 border w-50 ">
+                <div class="w-100 border p-2 bg-white rounded">
+                    <div class="d-flex ">
+                        <img src="./images/arrul-lin-sYhUhse5uT8-unsplash.jpg" alt="unavailable" style="width: 100px;"
+                            class="cart-img  border rounded p-2 ">
+
+                        <div class="d-flex justify-content-center align-items-center">
+                            <p class=" p-2 me-5 ms-1"><strong>Tshirt</strong><br>
+                                Size: L | Brand: MAXTRA<br>
+                                color: grey</p>
+                            <p class="p-2 me-5 fw-bold"><i class="fa-solid fa-indian-rupee-sign"></i>350</p>
+
+                            <input type="number" value="1" min="1" style="width:  50px; height: 50px;"
+                                class="text-center p-2 me-5">
+                            <button class="btn btn-danger p-2 text-center me-4" style="height: 50px;">Remove</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart item1 end -->
+            <!-- cart summary start -->
+            <div class="col-4   border rounded ms-1 mb-4 p-3 bg-white" style="width: 300px;">
+                <p>Have a Coupon?</p>
+                <div class="input-group mb-3 w-75">
+                    <input type="text" class="form-control" placeholder="Coupon code" aria-label="Coupon code"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-dark text-white" type="button" id="button-addon2">Apply</button>
+                </div>
+                <div class="border  cart-summary p-2 rounded mt-2">
+                    <h6 class="fw-bold">Cart total</h6>
+                    <div class="d-flex justify-content-between">
+                        <p>Total price</p>
+                        <p class="fw-bold"><i class="fa-solid fa-indian-rupee-sign"></i>350</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Delivery</p>
+                        <p>Free</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Discount</p>
+                        <p class="text-white fw-bold">-<i class="fa-solid fa-indian-rupee-sign"></i>150</p>
+                    </div>
+
+                    <div class="d-grid gap-2 ">
+                        <button class="btn bg-white rounded-pill fw-bold" type="button"><i
+                                class="fa-solid fa-credit-card"></i> Proceed to pay</button>
+                        <button class="btn cart-btn rounded-pill fw-bold bg-dark text-white" type="button">Continue shopping</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- cart summary end -->
+        </div>
+
+
+
+
     </div>
 </body>
 

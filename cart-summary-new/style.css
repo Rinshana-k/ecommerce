@@ -1,0 +1,36 @@
+body{
+    
+    background-color:#ffe6ff;
+}
+
+
+:root{
+    --txt-color:#ff00ff;
+    --txt2:
+}  
+
+.txt-color{
+    color: var(--txt-color);
+}
+.btn-1{
+    color: var(--txt-color);
+    border-color: var(--txt-color);
+}
+
+.btn-1:hover{
+    color: white;
+    background-color: var(--txt-color);
+}
+.cart-img{
+    background-color: #ffe6ff;
+}
+.cart-summary{
+    background-color: var(--txt-color);
+}
+.nav-item>a:hover{
+    
+    transform: translateY(-6px);
+}
+.nav-item>a{
+    transition: transform .6s ease;
+}
